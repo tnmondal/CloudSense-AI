@@ -1,0 +1,44 @@
+# --- Secrets & credentials — NEVER commit these ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*service-account*.json
+*credentials*.json
+gcp-key*.json
+*.googleusercontent.com.json
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.venv/
+venv/
+.venv/
+
+# --- Node / frontend build artifacts ---
+node_modules/
+frontend/dist/
+frontend/dist-ssr/
+*.local
+
+# --- OS / editor ---
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# --- Logs ---
+*.log
+npm-debug.log*
+
+# --- Large generated data (kept locally, not in Git) ---
+data/bronze/
+data/silver/
+data/gold/
+data/marts/
+data/*.duckdb

@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-surface text-ink font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-brand-500/40;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #22314f;
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2c3e63;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-surface-panel border border-surface-border rounded-xl2 shadow-card;
+  }
+
+  .card-header {
+    @apply flex items-center justify-between px-5 pt-4 pb-2;
+  }
+
+  .card-title {
+    @apply text-sm font-medium text-ink-muted tracking-wide uppercase;
+  }
+
+  .kpi-value {
+    @apply text-2xl font-semibold text-ink tabular-nums;
+  }
+
+  .pill {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-medium;
+  }
+
+  .nav-link {
+    @apply flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-ink-muted transition-colors hover:bg-surface-raised hover:text-ink;
+  }
+
+  .nav-link-active {
+    @apply bg-brand-500/15 text-brand-400 hover:bg-brand-500/15 hover:text-brand-400;
+  }
+
+  .prose-chat {
+    @apply text-sm leading-relaxed;
+  }
+  .prose-chat h1,
+  .prose-chat h2,
+  .prose-chat h3 {
+    @apply text-ink font-semibold mt-3 mb-1.5 first:mt-0;
+  }
+  .prose-chat h3 {
+    @apply text-sm;
+  }
+  .prose-chat p {
+    @apply mb-2 last:mb-0;
+  }
+  .prose-chat ul {
+    @apply list-disc pl-5 mb-2 space-y-0.5;
+  }
+  .prose-chat ol {
+    @apply list-decimal pl-5 mb-2 space-y-0.5;
+  }
+  .prose-chat strong {
+    @apply text-ink font-semibold;
+  }
+  .prose-chat code {
+    @apply bg-surface-raised px-1 py-0.5 rounded text-xs font-mono text-brand-400;
+  }
+}

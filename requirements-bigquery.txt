@@ -1,0 +1,15 @@
+# CloudSense AI — Optional BigQuery Dependency
+#
+# This is NOT required for the default local application (API, frontend,
+# tests). It is only needed to run the Phase 6 BigQuery migration and
+# validation tooling:
+#   - run_bigquery_migration.py
+#   - src/pipeline/bigquery_client.py
+#   - src/pipeline/bigquery_validation.py
+#   - tests/test_bigquery_integration.py (live tests only)
+#
+# Install with:
+#   pip install -r requirements.txt
+#   pip install -r requirements-bigquery.txt
+
+google-cloud-bigquery>=3.20.0

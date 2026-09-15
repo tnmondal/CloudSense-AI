@@ -437,7 +437,7 @@ CloudSense-AI/
 - FastAPI backend with a full REST API surface
 - Gemini FinOps Copilot (deterministic mode fully verified; live mode implemented and structurally verified, not yet run against a real API key here)
 - React + TypeScript + Vite frontend dashboard (8 pages)
-- Optional, additive BigQuery data warehouse (schema, partitioning, adapter, migration script, validation, views — not yet executed against a real GCP project here)
+- Optional, additive BigQuery data warehouse (schema, partitioning, adapter, migration script, validation, views — not yet executed against a real GCP project here).
 - **Production-hardening & security audit** — full-repository review; found and fixed real defects (live-mode tool-call handling, tool-failure disclosure, unsafe CORS configuration, a repeated-data-loading performance issue); verified all core end-to-end flows, backend/frontend schema consistency, and startup from a clean process
 - Comprehensive test suite: **54 passed, 4 skipped** (skips are credential-gated, never faked)
 
